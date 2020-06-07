@@ -388,14 +388,14 @@
               <FilePath>.\Source\main.c</FilePath>
             </File>
             <File>
-              <FileName>_HAL_GPIO.c</FileName>
+              <FileName>init.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Source\_HAL_GPIO.c</FilePath>
+              <FilePath>.\Source\init.c</FilePath>
             </File>
             <File>
-              <FileName>_HAL_GPIO.h</FileName>
+              <FileName>init.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\Source\_HAL_GPIO.h</FilePath>
+              <FilePath>.\Source\init.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -10,7 +10,7 @@
 #define PORTD GPIOD
 #define PORTE GPIOE
 #define PORTF GPIOF
-#define PORTG_GPIOG
+#define PORTG GPIOG
 
 //Pin mode
 #define OUTPUT_MODE              ((uint32_t)0x01)
