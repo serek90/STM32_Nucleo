@@ -13,27 +13,33 @@
 ************************************************/
 
 /***********************************************
-*function
+*functions
 ***********************************************/
+#define MSK(x) (1<<x)
+
 void initHardware(void);
 void initSPI(void);
-void SPIread(uint8_t data);
-uint8_t SPIwrite(void);
+void SPIwrite(uint8_t data);
+uint8_t SPIread( void );
+void Display( void );
 
-
+/*******************************
+*main
+*******************************/
 int main()
 {
 	initHardware();
 	
 	while(1)
 	{
-		
-		
-		
+		/* do some stuff */	
 	}
 
 	return 0;
 }
+
+
+
 
 /******************************
 *
@@ -46,6 +52,9 @@ void initHardware(void)
 	SysTick_Config(SystemCoreClock / 1000);
 }
 
+/********************************
+*
+********************************/
 void initSPI(void)
 {
 	//turn on the clocks
@@ -66,8 +75,25 @@ void initSPI(void)
 	GPIOA->CRL &= ~(GPIO_CRL_CNF7_0);
 	GPIOA->CRL |= (GPIO_CRL_CNF7_1); //As a special function
 	
-	//AFIO->MAPR
+	SPI1->CR1 |= SPI_CR1_BIDIMODE;
 	
+}
+
+/*********************************
+*
+**********************************/
+void SPIwrite(uint8_t data)
+{
 	
+}
+
+/*********************************
+*
+*********************************/
+uint8_t SPIread( void)
+{
+	uint8_t data = 0;
+	
+	return data;
 }
 
